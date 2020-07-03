@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/ic_cross" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/sfpro_display_semibold"
+            android:letterSpacing="0.0525"
+            android:text="Sort / Filter"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="18dp"
+            android:fontFamily="@font/sfpro_display_medium"
+            android:letterSpacing="0.0525"
+            android:text="@string/clear_all"
+            android:textColor="@color/orange"
+            android:textSize="13.3sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/viewline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="#f3f4f6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sort_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:letterSpacing="0.0525"
+                android:paddingLeft="16.7dp"
+                android:paddingTop="14.5dp"
+                android:paddingBottom="15.7dp"
+                android:text="@string/sort"
+                android:textColor="@color/silver"
+                android:textSize="13.3sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/viewline" />
+
+            <TextView
+                android:id="@+id/cuisines_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:letterSpacing="0.0525"
+                android:paddingLeft="16.7dp"
+                android:paddingTop="14.5dp"
+                android:paddingBottom="15.7dp"
+                android:text="@string/cuisines"
+                android:textColor="@color/silver"
+                android:textSize="13.3sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/viewline" />
+
+            <TextView
+                android:id="@+id/offers_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:letterSpacing="0.0525"
+                android:paddingLeft="16.7dp"
+                android:paddingTop="14.5dp"
+                android:paddingBottom="15.7dp"
+                android:text="@string/offers_amp_more"
+                android:textColor="@color/silver"
+                android:textSize="13.3sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/viewline" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.9dp"
+            android:layout_height="match_parent"
+            android:background="@color/viewline" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/select_item_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="@font/sfpro_text_medium"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="13dp"
+                    android:text="@string/relevance"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/sfpro_text_medium"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="13dp"
+                    android:text="@string/cost_for_two"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/sfpro_text_medium"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="13dp"
+                    android:text="Delivery Time"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/sfpro_text_medium"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="13dp"
+                    android:text="@string/rating"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_above="@+id/btn"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="6.5dp"
+                android:background="@drawable/shadow" />
+
+            <Button
+                android:id="@+id/apply_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginRight="16.3dp"
+                android:background="@drawable/rectangle_orange"
+                android:fontFamily="@font/sfpro_text_medium"
+                android:paddingTop="13.3dp"
+                android:paddingBottom="13dp"
+                android:text="APPLY"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18.3sp"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

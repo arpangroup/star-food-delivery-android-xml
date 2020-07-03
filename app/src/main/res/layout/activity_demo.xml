@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".DemoActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentData_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/home_Ll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_blue"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/home_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="12.7sp"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:layout_gravity="center"
+                android:layout_marginTop="6.5dp"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/offer_Ll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/offer_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_offer_black"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/offer_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offer"
+                android:textSize="12.7sp"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:layout_gravity="center"
+                android:layout_marginTop="6.5dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_Ll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/search_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_black"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/search_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:textSize="12.7sp"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:layout_gravity="center"
+                android:layout_marginTop="6.5dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cart_Ll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cart_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_cart_black" />
+
+            <TextView
+                android:id="@+id/cart_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:textSize="12.7sp"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:layout_gravity="center"
+                android:layout_marginTop="6.5dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/more_Ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/more_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/more_black" />
+
+            <TextView
+                android:id="@+id/more_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6.5dp"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:text="More"
+                android:textColor="@color/black"
+                android:textSize="12.7sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

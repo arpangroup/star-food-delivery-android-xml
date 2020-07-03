@@ -1,0 +1,147 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fragment.DoshRateFragment">
+
+    <!--Sada Dosh Data-->
+    <LinearLayout
+        android:id="@+id/add_item_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.3dp"
+        android:layout_marginRight="16.3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dosh_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="22.5dp"
+            android:fontFamily="@font/sfpro_display_semibold"
+            android:text="> SADA DOSA"
+            android:textColor="@color/blue"
+            android:textSize="13.3sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="22dp"
+            android:layerType="software"
+            android:src="@drawable/dotted" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfpro_display_medium"
+            android:text="Lunchbox"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_marginTop="19.7dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_star_blue"
+                android:tint="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="@string/_4_6"
+                android:textColor="@color/blue"
+                android:textSize="12.3sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="Deliver in 30 min."
+                android:textColor="@color/gray"
+                android:textSize="12.3sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="12.8dp"
+            android:background="@color/viewline" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rate_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19.8dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/viewline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfpro_display_medium"
+            android:text="Miltan Dosa Center"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_marginTop="19.7dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_star_blue"
+                android:tint="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="@string/_4_6"
+                android:textColor="@color/blue"
+                android:textSize="12.3sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="Deliver in 30 min."
+                android:textColor="@color/gray"
+                android:textSize="12.3sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="12.8dp"
+            android:background="@color/viewline" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rate1_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21.8dp"/>
+    </LinearLayout>
+</LinearLayout>

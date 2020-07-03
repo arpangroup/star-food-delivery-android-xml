@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".IndividualItemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingBottom="29.8dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="205.5dp"
+            android:background="@drawable/rectangle_image">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16.7dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="35dp"
+                android:src="@drawable/ic_cross"
+                android:tint="@color/white" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginTop="22.5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_veg" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.2dp"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="Paneer Biryani"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:text="Noodles with cold drinks &amp; sauce "
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:text="From : Biryani and talks"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.3dp"
+                android:fontFamily="@font/sfpro_display_regular"
+                android:lineSpacingExtra="3dp"
+                android:text="A simple, yet to heartily combo containing chicken\nYangchow noodles, served along with cold drinks and\nfresh sauce"
+                android:textColor="@color/silver"
+                android:textSize="13.3sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16.7dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="₹"
+                    android:textColor="#2546b0"
+                    android:textSize="13.3sp" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="220"
+                    android:textColor="#2546b0"
+                    android:textSize="13.3sp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/add_item_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_gray_border"
+                        android:fontFamily="@font/sfpro_display_medium"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="25dp"
+                        android:paddingBottom="8dp"
+                        android:text="+ Add"
+                        android:textColor="@color/orange"
+                        android:textSize="14sp"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/add_cart_linear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectangle_silver_border"
+                        android:orientation="horizontal"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="8dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/minus_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sfpro_display_medium"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/increase_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sfpro_display_medium"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/plus_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sfpro_display_medium"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="+"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="13.3dp"
+            android:background="#f7f7f7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingRight="7.5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/work" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_correct" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:letterSpacing="0.0525"
+                    android:text="Deliver to work"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11.7dp"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:letterSpacing="0.0525"
+                    android:lineSpacingExtra="3dp"
+                    android:text="393, Seventh street, durga nagar, Maletioist\nnear lax road, malhar point, mumbai"
+                    android:textColor="@color/silver"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11.7dp"
+                    android:fontFamily="@font/sfpro_text_semibold"
+                    android:text="40-45 Min. | No extra Charge"
+                    android:textColor="@color/green"
+                    android:textSize="12.8sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.4dp"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginTop="20.3dp"
+            android:layout_marginRight="16.7dp"
+            android:background="#f7f7f7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingRight="7.5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rupees" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/blacksign" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:letterSpacing="0.0525"
+                    android:text="No preferred payment method"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:letterSpacing="0.0525"
+                    android:lineSpacingExtra="3dp"
+                    android:text="Tip: Use wallets to enjoy faster checkouts."
+                    android:textColor="@color/silver"
+                    android:textSize="12.8sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginTop="48.5dp"
+            android:layout_marginRight="16.7dp"
+            android:background="@drawable/ripple_green"
+            android:fontFamily="@font/sfpro_text_medium"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="SELECT PAYMENT METHOD"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</ScrollView>

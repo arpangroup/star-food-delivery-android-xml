@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RestaurantProfile1Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_profile"
+            android:id="@+id/search_linear" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="80dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="16.7dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfpro_display_bold"
+                        android:text="Lunchbox"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_nonveg" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_veg" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:letterSpacing="0.0525"
+                    android:text="@string/north_indian_italian_deserts"
+                    android:textColor="@color/silver"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="16.7dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:letterSpacing="0.0525"
+                    android:text="@string/vadiwadi_road"
+                    android:layout_marginLeft="16.7dp"
+                    android:textColor="@color/orange"
+                    android:textSize="11.5sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="17.7dp"
+                    android:layerType="software"
+                    android:src="@drawable/dotted"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22.3dp"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_star_blue"
+                                android:tint="#1c1a2f" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:fontFamily="@font/sfpro_display_bold"
+                                android:letterSpacing="0.0525"
+                                android:text="@string/_4_6"
+                                android:textColor="@color/black"
+                                android:textSize="13.5sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/sfpro_display_medium"
+                            android:letterSpacing="0.0525"
+                            android:text="@string/_1000_ratings"
+                            android:textColor="@color/silver"
+                            android:textSize="12.5sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2.5dp"
+                            android:fontFamily="@font/sfpro_display_bold"
+                            android:letterSpacing="0.0525"
+                            android:text="@string/rs_450"
+                            android:textColor="@color/black"
+                            android:textSize="12.3sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/sfpro_display_medium"
+                            android:letterSpacing="0.0525"
+                            android:text="@string/for_two"
+                            android:textColor="@color/silver"
+                            android:textSize="11.7sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2.5dp"
+                            android:fontFamily="@font/sfpro_display_bold"
+                            android:letterSpacing="0.0525"
+                            android:text="@string/_30_min"
+                            android:textColor="@color/black"
+                            android:textSize="12.3sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/sfpro_display_medium"
+                            android:letterSpacing="0.0525"
+                            android:text="@string/delivery_time"
+                            android:textColor="@color/silver"
+                            android:textSize="11.7sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="22.3dp"
+                    android:background="@color/viewline"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.7dp"
+                    android:background="@drawable/dotted_line_rect_pink"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:paddingTop="12.5dp"
+                    android:paddingBottom="12.5dp"
+                    android:text="@string/opens_next_at_11_15_am_wednesday"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="11.5sp"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31.3dp"
+                    android:fontFamily="@font/sfpro_display_bold"
+                    android:letterSpacing="0.0525"
+                    android:text="@string/recommended"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="16.7dp"
+                    android:textSize="14sp" />
+
+                <!--recyclerView used-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recommended_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17.7dp"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="7.7dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.3dp"
+                    android:background="@color/silver"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22.5dp">
+
+                    <LinearLayout
+                        android:id="@+id/linear_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginRight="16.7dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_bold"
+                            android:letterSpacing="0.0525"
+                            android:text="Basmati Rice Lunchbox"
+                            android:textColor="@color/black"
+                            android:textSize="16.7sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:rotation="180"
+                            android:src="@drawable/ic_arrow_black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16.7dp"
+                        android:layout_marginRight="16.7dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_bold"
+                            android:letterSpacing="0.0525"
+                            android:text="Basmati Rice Lunchbox"
+                            android:textColor="@color/black"
+                            android:textSize="16.7sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_black" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:letterSpacing="0.0525"
+                    android:text="@string/_5_items"
+                    android:textColor="@color/gray"
+                    android:textSize="13.5sp"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp" />
+
+                <!--recyclerView used-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/basmatirice_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.3dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@color/silver"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22.5dp"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp">
+
+                    <LinearLayout
+                        android:id="@+id/linear_kulcha_down"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_bold"
+                            android:letterSpacing="0.0525"
+                            android:text="@string/kulcha_bread_lunchbox"
+                            android:textColor="@color/black"
+                            android:textSize="16.7sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:rotation="180"
+                            android:src="@drawable/ic_arrow_black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_kulcha_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/sfpro_display_bold"
+                            android:letterSpacing="0.0525"
+                            android:text="@string/kulcha_bread_lunchbox"
+                            android:textColor="@color/black"
+                            android:textSize="16.7sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_black" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:letterSpacing="0.0525"
+                    android:text="@string/_5_items"
+                    android:textColor="@color/gray"
+                    android:textSize="13.5sp"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp" />
+
+                <!--recyclerView used-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/kulcha_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginLeft="16.7dp"
+                    android:layout_marginRight="16.7dp"
+                    android:paddingBottom="30dp"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_above="@+id/item_incrementcart_linear"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rect_orange_cornor"
+            android:fontFamily="@font/sfpro_display_bold"
+            android:letterSpacing="0.0525"
+            android:paddingLeft="38dp"
+            android:paddingRight="38dp"
+            android:text="@string/menu"
+            android:textColor="@color/white"
+            android:textSize="12.7sp" />
+
+
+        <LinearLayout
+            android:id="@+id/item_incrementcart_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                android:background="@color/blue"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:paddingLeft="16.7dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:text="@string/_1_item_220"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@color/blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:paddingLeft="16.7dp"
+                    android:paddingTop="14dp"
+                    android:paddingBottom="14dp"
+                    android:text="@string/view_cart"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_shopping_bag" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

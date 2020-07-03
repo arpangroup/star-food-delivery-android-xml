@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".HomePageWithRateFoodActivity">
+
+    <me.didik.component.StickyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16.7dp"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_navigation" />
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HOME"
+                        android:textColor="@color/blue"
+                        android:textSize="14.7sp"
+                        android:fontFamily="@font/sfpro_display_bold"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.7dp"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="Offers"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="14.7sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47.5dp"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:letterSpacing="0.0525"
+                android:text="@string/_31_a_rk_flats_near_vasushisti_mall"
+                android:textColor="@color/silver"
+                android:textSize="10sp"
+                android:layout_marginTop="-10dp"/>
+
+            <!--recycler view code-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/food_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25.3dp"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="16.7dp"
+                android:paddingRight="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.3dp"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="30.3dp"
+                android:layout_marginRight="16.7dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="20.2dp"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:text="@string/food"
+                android:textSize="14sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="8dp"
+                android:rating="0"
+                android:theme="@style/RatingBar" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.3dp"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginRight="16.7dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/filter_liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28.5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16.7dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:paddingBottom="21.3dp"
+                android:tag="sticky"
+                android:paddingRight="16.7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="@string/multitext"
+                    android:textSize="13.3sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_filter_black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="@string/filter"
+                    android:textColor="@color/black"
+                    android:textSize="12.7sp" />
+
+            </LinearLayout>
+
+            <!--recycler view code-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fooditali_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="16.7dp"
+                android:paddingRight="16.7dp"
+                android:paddingBottom="45dp" />
+        </LinearLayout>
+    </me.didik.component.StickyNestedScrollView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="5.5dp">
+
+            <LinearLayout
+                android:id="@+id/home_linear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/homeimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_home_blue" />
+
+                <TextView
+                    android:id="@+id/hometxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/offer_linear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/offerimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_offer_black" />
+
+                <TextView
+                    android:id="@+id/offertxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3.5dp"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="Offers"
+                    android:textColor="@color/silver"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/search_linear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/searchimg"
+                    android:layout_width="15.5dp"
+                    android:layout_height="15.5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/search_black" />
+
+                <TextView
+                    android:id="@+id/searchtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="Search"
+                    android:textColor="@color/silver"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cart_linear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cartimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_cart_black" />
+
+                <TextView
+                    android:id="@+id/carttxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="Cart"
+                    android:textColor="@color/silver"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/more_linear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/moreimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/more_black"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:id="@+id/moretxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="More"
+                    android:textColor="@color/silver"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5.5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

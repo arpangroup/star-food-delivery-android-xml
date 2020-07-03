@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="fragment.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.7dp"
+        android:layout_marginRight="16.3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/rectangle_gray"
+            android:orientation="horizontal"
+            android:paddingLeft="13.7dp"
+            android:paddingTop="13.3dp"
+            android:paddingRight="23.3dp"
+            android:paddingBottom="13.3dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.3dp"
+                android:background="@color/transferent"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:hint="@string/search_restaurant_cafe"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="16sp"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/re_search_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/sfpro_display_bold"
+                android:text="@string/recent_search"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.3dp"
+                android:layout_marginTop="21.5dp"
+                android:background="@color/black" />
+
+            <!--RecyclerView Used Search Restaurant-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/restaurant_search_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

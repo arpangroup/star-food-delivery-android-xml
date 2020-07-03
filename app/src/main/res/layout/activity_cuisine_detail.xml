@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".CuisineDetailActivity">
+
+    <me.didik.component.StickyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/back"
+                    android:tint="@color/white" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="23.5dp"
+                android:fontFamily="@font/sfpro_text_heavy"
+                android:text="@string/indian_cuisine"
+                android:textColor="@color/black"
+                android:textSize="18.3sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="2.5dp"
+                android:fontFamily="@font/sfpro_display_regularitalic"
+                android:text="@string/indian_cuisine_txt"
+                android:textColor="@color/silver"
+                android:textSize="13.3sp"
+                android:letterSpacing="0.0525"
+                android:lineSpacingExtra="2.5dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="21.3dp"
+                android:layout_marginRight="16.7dp"
+                android:layerType="software"
+                android:src="@drawable/dotted" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="24dp"
+                android:background="@color/white"
+                android:tag="sticky"
+                android:layout_marginRight="16.7dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="@string/res53"
+                    android:textSize="13.3sp"
+                    android:letterSpacing="0.0525" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_filter_black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="@string/filter"
+                    android:textColor="@color/black"
+                    android:textSize="12.7sp"
+                    android:layout_marginRight="10dp"
+                    android:letterSpacing="0.0525"/>
+
+            </LinearLayout>
+            <!--recycler view-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cuisines_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="16.7dp"
+                android:paddingRight="16.7dp"/>
+        </LinearLayout>
+    </me.didik.component.StickyNestedScrollView>
+
+</LinearLayout>

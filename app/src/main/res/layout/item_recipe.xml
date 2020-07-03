@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/birani"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/foodimg_1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:src="@drawable/best" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sfpro_display_bold"
+                android:paddingBottom="5dp"
+                android:text="@string/best_seller"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/rice_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/sfpro_display_medium"
+        android:letterSpacing="0.0525"
+        android:text="Basmati Rice Lunchbox"
+        android:textColor="@color/silver"
+        android:textSize="11.5sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paneer_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dp"
+                android:fontFamily="@font/sfpro_display_semibold"
+                android:letterSpacing="0.0525"
+                android:text="Paneer Biryani"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="₹"
+                    android:textColor="@color/blue"
+                    android:textSize="13.3sp" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="2.5dp"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="220"
+                    android:textColor="@color/blue"
+                    android:textSize="13.3sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/add_item_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_gray_border"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:paddingLeft="20dp"
+                android:paddingTop="4dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="+ Add"
+                android:textColor="@color/orange"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/add_cart_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_silver_border"
+                android:orientation="horizontal"
+                android:paddingTop="4dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/minus_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="16dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/increase_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/plus_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="12dp"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="18.7dp"
+    android:layout_marginRight="9dp"
+    android:paddingBottom="15dp">
+
+
+    <ImageView
+        android:id="@+id/chinesses_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chiness1"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/no_of_restaurants_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/sfpro_display_medium"
+        android:letterSpacing="0.0525"
+        android:text="@string/_31_restaurants"
+        android:textColor="@color/gray"
+        android:textSize="11sp" />
+    <TextView
+        android:id="@+id/chinesses_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfpro_display_semibold"
+        android:text="@string/chinesse"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginTop="2.5dp"
+        android:letterSpacing="0.0525"/>
+
+</LinearLayout>

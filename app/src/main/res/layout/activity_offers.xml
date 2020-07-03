@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".OffersActivity">
+
+    <me.didik.component.StickyNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="@drawable/snack_img">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:src="@drawable/back" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="20.5dp"
+                android:fontFamily="@font/sfpro_display_heavy"
+                android:text="@string/get_upto_60_off"
+                android:textColor="@color/black"
+                android:textSize="18.3dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="1.5dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_regular"
+                    android:text="@string/use_code"
+                    android:textColor="@color/black"
+                    android:textSize="14.3dp"
+                    android:letterSpacing="0.0525" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="@string/tiptop60"
+                    android:letterSpacing="0.0525"
+                    android:textColor="@color/blue"
+                    android:textSize="14.3dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="18.7dp"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/valid_once_every_2_hours_additional_rs_30_cashback_via_namazon_pay_valid_10_times_per_user_till_12th_june"
+                android:textColor="@color/silver"
+                android:textSize="12.7sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginLeft="16.7dp"
+                android:layout_marginTop="18.7dp"
+                android:layout_marginRight="16.7dp"
+                android:layerType="software"
+                android:src="@drawable/dotted" />
+
+            <LinearLayout
+                android:id="@+id/filter_liner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15.7dp"
+                android:background="@color/white"
+                android:paddingBottom="21.3dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:tag="sticky"
+                android:paddingRight="16.7dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:letterSpacing="0.0525"
+                    android:text="@string/multitext"
+                    android:textSize="13.3sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="7.8dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_filter_black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="@string/filter"
+                    android:textColor="@color/black"
+                    android:textSize="12.7sp" />
+
+            </LinearLayout>
+
+            <!--recycler view-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/offer_recycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingLeft="16.7dp"
+                android:paddingRight="16.7dp"
+                android:paddingBottom="25dp"/>
+        </LinearLayout>
+    </me.didik.component.StickyNestedScrollView>
+</LinearLayout>

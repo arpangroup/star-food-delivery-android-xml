@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MoreDetail3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:layout_marginTop="6dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_bold"
+                    android:text="ORDER  #39819918823"
+                    android:textColor="@color/black"
+                    android:textSize="16.7sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/sfpro_display_medium"
+                    android:text="Delivered  |  2 items  |  ₹ 200.00"
+                    android:textColor="@color/silver"
+                    android:textSize="13.3sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:layout_marginTop="16.8dp"
+            android:background="@color/viewline" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_map_marker_address"
+                    android:layout_marginTop="0dp"/>
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/dotted_linegray"
+                    android:layerType="software"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="Shivam Pavbhaji"
+                    android:textColor="@color/black"
+                    android:textSize="16.7sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11.7dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="393, Seventh street, durga nagar, Maletioist\nnear lax road, malhar point, mumbai"
+                    android:textColor="@color/silver"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/sfpro_display_medium"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="18dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home"
+                android:tint="@color/silver"
+                android:layout_marginTop="7dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpro_display_semibold"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="16.7sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11.7dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="393, Seventh street, durga nagar, Maletioist\nnear lax road, malhar point, mumbai"
+                    android:textColor="@color/silver"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/sfpro_display_medium"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/viewline" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_verified" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11dp"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="Order delivered on 18 January 2019 at 8:40 pm"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/viewline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/sfpro_display_semibold"
+            android:text="Your Order"
+            android:textColor="@color/black"
+            android:textSize="16.7sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13.3dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/viewline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13.3dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_veg"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.7dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="Pavbhaji X 2"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="-2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11dp"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="₹ 200.00"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13.3dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_veg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.7dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="Extra Bun X 4"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="-2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11dp"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="₹ 40.00"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13.3dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/viewline"  />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13.3dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="Subtotal"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11dp"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="₹ 240.00"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="3.7dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfpro_display_regular"
+                android:text="Discounted Delivery charge"
+                android:textColor="@color/gray"
+                android:textSize="12.3sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11dp"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="₹ 10.00"
+                android:textColor="@color/gray"
+                android:textSize="11.3sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13.3dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/viewline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13.3dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="Discount Applied ( STAR50 )"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11dp"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="- ₹ 50.00"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13.3dp"
+            android:layout_marginRight="18dp"
+            android:background="@color/viewline"  />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13.3dp"
+            android:layout_marginRight="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfpro_display_medium"
+                android:text="Paid Via Cash"
+                android:textColor="@color/silver"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11dp"
+                android:fontFamily="@font/sfpro_display_bold"
+                android:text="TOTAL"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="11dp"
+                android:fontFamily="@font/sfpro_display_bold"
+                android:text="₹ 200.00"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reorder_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rectangle_history_blue"
+            android:fontFamily="@font/sfpro_text_medium"
+            android:letterSpacing="0.0525"
+            android:text="RE ORDER"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rectangle_red_history"
+            android:fontFamily="@font/sfpro_text_medium"
+            android:letterSpacing="0.0525"
+            android:text="NEED HELP ?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>
